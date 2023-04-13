@@ -1,0 +1,56 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Header styles */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Counter value styles */
+#value {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Button container styles */
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Button styles */
+button {
+  background-color: #eee;
+  border: 1px solid rgb(45, 39, 39);
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 5px 15px;
+}
+
+button:hover {
+    background-color: #aaa;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Clock</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="alarm">Alarm</button>
+          <button class="tab-btn" data-tab="stopWatch">StopWatch</button>
+          <button class="tab-btn" data-tab="timer">Timer</button>
+        </div>
+        <div class="tab-content" id="alarm">
+          <h1>Alarm</h1>
+          <div class="alarm">
+            <input
+              type="datetime-local"
+              id="alarmTime"
+              name="alarm-time"
+              value="0000-00-12T00:00"
+              min="2023-04-12T00:00"
+              max="2023-12-12T00:00"
+              required
+            />
+            <br />
+            <button id="setAlarm">Add</button>
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <img
+                  src="assets/alarm_clock.gif"
+                  alt="clock-image"
+                  class="alarmClock"
+                />
+                <p id="alertMessage"></p>
+                <button id="stopButton">Stop</button>
+              </div>
+            </div>
+          </div>
+          <div class="alarms">
+            <h1></h1>
+            <span id="ringingTime"></span>
+          </div>
+        </div>
+        <div class="tab-content hidden" id="stopWatch">
+          <h1>Stop Watch</h1>
+          <div class="stopWatchDisplay">00 : 00 : 00 : 000</div>
+          <div class="stopWatchBtns">
+            <button class="hidden" id="resetStopWatch">
+              <i class="fa fa-refresh"></i>
+            </button>
+            <button id="startStopWatch">
+              <i class="fa fa-play"></i>
+            </button>
+            <button class="hidden" id="pauseStopWatch">
+              <i class="fa fa-pause"></i>
+            </button>
+            <button class="hidden" id="flagTime">
+              <i class="fa fa-flag"></i>
+            </button>
+          </div>
+        </div>
+        <div class="timeStamps">
+          <ul></ul>
+        </div>
+        <div class="tab-content hidden" id="timer">
+          <h1>Timer</h1>
+          <div class="timer">
+            <div class="labels">
+              <label for="timer-hours">H</label>
+              <label for="timer-minutes">M</label>
+              <label for="timer-seconds">S</label>
+            </div>
+            <div class="timerInputs">
+              <input
+                type="number"
+                id="timer-hours"
+                name="timer-hours"
+                min="0"
+                max="23"
+                value="0"
+              />
+
+              <input
+                type="number"
+                id="timer-minutes"
+                name="timer-minutes"
+                min="0"
+                max="59"
+                value="0"
+              />
+
+              <input
+                type="number"
+                id="timer-seconds"
+                name="timer-seconds"
+                min="0"
+                max="59"
+                value="0"
+              />
+            </div>
+            <div class="timerBtns">
+              <button class="hidden" id="resetTimer">
+                <i class="fa fa-refresh"></i>
+              </button>
+              <button id="startTimer">
+                <i class="fa fa-play"></i>
+              </button>
+              <button class="hidden" id="pauseTimer">
+                <i class="fa fa-pause"></i>
+              </button>
+            </div>
+            <div class="timerDisplay">00 : 00 : 00</div>
+          </div>
+        </div>
+        <div id="timerModal" class="modal">
+          <div class="modal-content">
+            <p id="timerAlertMessage"></p>
+            <button id="timerStopButton">Stop</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/alarm.js"></script>
+    <script src="scripts/stopWatch.js"></script>
+    <script src="scripts/timer.js"></script>
+  </body>
+</html>
