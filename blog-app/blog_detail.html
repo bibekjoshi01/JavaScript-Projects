@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <!-- <link rel="stylesheet" href="css/global.css" /> -->
+    <link rel="stylesheet" href="css/blog_detail.css" />
+    <link rel="icon" type="image/png" href="assets/logo.png" sizes="16x16" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Blog Detail</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"> Bibek's Blog </a>
+      </div>
+      <div class="menus">
+        <ul class="menu">
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="blog_detail.html">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="btn">
+          <button class="login">Login</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- blog detail section -->
+    <main>
+      <div class="container">
+        <div class="blog_detail">
+          <div class="blog_header">
+            <div class="category">
+              <span>Technology</span>
+            </div>
+            <div class="header_content">
+              <h4>
+                NASA selects San Antonio firm to help build lunar landing pad
+                with moon dust
+              </h4>
+              <div class="header_info">
+                <h5>Last Updated on March 14, 2023</h5>
+                <div class="social-icons">
+                  <a href="#" class="social-icon"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fa fa-pinterest"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="featured_image">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                alt="fea_image"
+              />
+            </div>
+            <div class="extra_info">
+              <div class="likes">
+                <i class="fa fa-heart"></i>
+                <span>100 Likes</span>
+              </div>
+              <div class="comments">
+                <i class="fa fa-comments"></i>
+                <span>50 Comments</span>
+              </div>
+              <div class="author">
+                <img
+                  src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png"
+                  alt="author_image"
+                  class="author_image"
+                />
+                <div class="author_info">
+                  <h5>Bibek Joshi</h5>
+                  <small>- 5k Articles</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog_content">
+            <div class="quote-container">
+              <h2 class="quote-text">
+                "Don't wait for opportunities, create them. Don't wait for
+                success, work for it. Don't wait for someone else to make your
+                dreams come true, take responsibility for making them a reality.
+                Your life is what you make it, so make it count."
+              </h2>
+              <p class="quote-author">- Chat GPT</p>
+            </div>
+          </div>
+          <div class="navigation">
+            <div class="prev">
+              <i class="fa fa-arrow-left"></i>
+              Prev
+            </div>
+            <div class="next">
+              Next
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+          <div id="comment-section">
+            <form>
+              <h3>Leave A Comment</h3>
+              <div class="name_email">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="search_bar">
+            <input
+              type="text"
+              class="search_box"
+              id="search_box"
+              placeholder="Search ..."
+            />
+          </div>
+          <div class="recent_posts">
+            <h3>Recent Posts</h3>
+            <hr />
+            <div class="card">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+              />
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                voluptates at tenetur, necessitatibus exercitationem . . .
+              </h4>
+            </div>
+            <div class="card">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+              />
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                voluptates at tenetur, necessitatibus exercitationem . . .
+              </h4>
+            </div>
+            <div class="card">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+              />
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                voluptates at tenetur, necessitatibus exercitationem . . .
+              </h4>
+            </div>
+            <div class="card">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+              />
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                voluptates at tenetur, necessitatibus exercitationem . . .
+              </h4>
+            </div>
+          </div>
+          <div class="top_categories">
+            <h3>Top Categories</h3>
+            <hr />
+            <div class="categories">
+              <h4>Technology</h4>
+              <h4>Technology</h4>
+              <h4>Technology</h4>
+              <h4>Technology</h4>
+            </div>
+          </div>
+          <div class="social_share">
+            <h3>Social Share</h3>
+            <hr />
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

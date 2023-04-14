@@ -1,0 +1,81 @@
+/* nav bar css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 30px;
+  color: black;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  z-index: 10;
+}
+
+.logo {
+  border: none;
+}
+
+.logo a {
+  font-family: "Brush Script MT", cursive;
+  font-size: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: black;
+}
+
+.menu li a.active {
+  color: red;
+}
+
+.menu li a:hover {
+  color: #912a34;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menus button {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+.menus button:hover {
+  background-color: #238dd3;
+  transition: 0.5s ease-in-out;
+}
