@@ -6,4 +6,4 @@
 4. FAQs Page
 5. Modal
 6. Reviews Carousel
-
+7. Will be updating clock 
